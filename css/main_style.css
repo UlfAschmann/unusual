@@ -1,0 +1,301 @@
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	width: 100%;
+	height: 100%;
+	color: #999;
+	letter-spacing: 1.5px;
+}
+
+h1,
+h2,
+h3 {
+	color: #e71c37;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+	color: #8a8683;
+}
+
+h1 {
+	margin: 0 0 50px 0;
+}
+
+h2 {
+	margin: 0 0 30px 0;
+}
+
+section {
+	padding: 150px 0;
+}
+
+.underline {
+	border-top: 1px solid #8a8683;
+	border-bottom: 1px solid #8a8683;
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
+.navbar-inverse {
+	background-color: #353535;
+	border-color: #303030;
+	left: 0;
+	right: 0;
+}
+
+.navbar-inverse .nav {}
+
+.navbar-inverse .navbar-brand {
+	padding: 15px 0 0 30px;
+}
+
+.nav>li {
+	font-size: 15px;
+	font-weight: 700;
+	padding: 15px 0;
+	border-bottom: 2px solid #353535;
+	border-top: 2px solid #353535;
+}
+
+.navbar .nav>li:hover {
+	border-bottom: 2px inset #e71c37;
+	border-top: 2px solid #e71c37;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+	color: #fff;
+	background-color: transparent;
+}
+
+
+/* Video */
+
+.video-section {
+	min-height: 100%;
+	background-color: #353535;
+}
+
+.video-section .pattern-overlay {
+	padding-top: 10%;
+}
+
+.video-section h1,
+.video-section h3 {
+	text-align: center;
+	color: #fff;
+}
+
+.video-section p {
+	text-align: center;
+}
+
+.video-section h1 {
+	font-size: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 40px auto 0px;
+	text-shadow: 1px 1px 1px #000;
+	-webkit-text-shadow: 1px 1px 1px #000;
+	-moz-text-shadow: 1px 1px 1px #000;
+}
+
+.video-section h3 {
+	font-family: 'Roboto Slab';
+	font-size: 16px;
+	letter-spacing: 2;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 10px auto 15px;
+}
+
+.video-section .buttonBar {
+	display: none;
+}
+
+.video-section i {
+	color: #e71c37;
+	padding-top: 13%;
+	-webkit-animation-delay: 3s;
+	-webkit-transition: color 1s ease;
+	transition: color 1s ease;
+}
+
+.video-section a i:hover {
+	color: #fff;
+	-webkit-transition: color 1s ease;
+	transition: color 1s ease;
+}
+
+.player {
+	font-size: 1px;
+}
+
+#about {
+	background: #353535;
+}
+
+#about p {
+	text-transform: uppercase;
+}
+
+.media .media-body p {
+	text-transform: lowercase !important;
+}
+
+.media .pull-left {
+	width: 60px;
+}
+
+#about a {
+	color: #999;
+	text-decoration: none;
+	-webkit-transition: color 1s ease;
+	transition: color 1s ease;
+}
+
+#about a:hover {
+	color: #e71c37;
+	-webkit-transition: color 1s ease;
+	transition: color 1s ease;
+}
+
+.media .media-body h3,
+.media .media-body h4 {
+	margin: 0px;
+}
+
+.media .media-body h3 {
+	font-size: 20px;
+	color: #999;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.media .media-body h4 {
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+#about h5 {
+	font-size: 18px;
+	padding-top: 15px
+}
+
+#img-about {
+	background-image: url(../img/work.jpg);
+}
+
+#img-services {
+	background-image: url(../img/compu_old.jpg);
+}
+
+.background {
+	padding: 120px 0;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.services .item {
+	padding: 0px;
+}
+
+.services .inner-content {
+	padding: 15px 28px 25px 28px;
+}
+
+.colored-text {
+	color: #e71c37;
+}
+
+.services h4 {
+	margin: 7px 0;
+}
+
+.services .item.top:before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #3b3b3b;
+}
+
+.services .item:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 100%;
+	border-right: 1px solid #3b3b3b;
+}
+
+.services .itemlast:after {
+	display: none;
+}
+
+.services {
+	margin-top: 50px;
+}
+
+#portfolio {
+	background: #353535;
+}
+
+
+/* Large desktops and laptops */
+
+@media (min-width: 1200px) {}
+
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 768px) {
+	.navbar-fixed-bottom,
+	.navbar-fixed-top {
+		padding-right: 16px;
+		padding-left: 16px;
+		;
+	}
+}
+
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+	.navbar-inverse .navbar-brand {
+		padding: 0px;
+	}
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {
+	.navbar-inverse .navbar-brand {
+		padding: 0px;
+	}
+	.nav>li {
+		padding: 2px 0;
+	}
+}
