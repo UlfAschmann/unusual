@@ -28,4 +28,8 @@ jQuery(document).ready(function ($) {
 	});
 
 	$(".player").mb_YTPlayer();
+
+	$('.navbar-collapse a').click(function () {
+		$(".navbar-collapse").collapse('hide');
+	});
 });
