@@ -29,20 +29,38 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(window).load(function () {
+			"use strict";
+			$(".loader-div").fadeOut("slow");
+		});
+	</script>
 
 </head>
 
 <body>
 
+	<!-- loader -->
+	<div class="loader-div text-center">
+		<img class="loader-img" src="img/logo_unusual.png" alt="logo">
+		<span class="loader">
+		<span class="loader-inner">
+		</span>
+		</span>
+	</div>
+	<!-- loader end -->
+
+
 	<!--Video Section-->
 	<section id="page-top" data-spy="scroll" class="content-section video-section">
+		<div class="overlay"></div>
 		<div class="pattern-overlay">
 			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=M_q-YFdpAhk',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<img src="img/logo_unusual.png" alt="logo unusual-projetcs" class="img-responsive center-block">
-
 						<h1>BUILDING PLACES THAT INSPIRE.</h1>
 						<p>AGENCIA CREATIVA - DESARROLLO WEB - DISEÑO APPS - IMAGEN CORPORATIVA</p>
 						<h3>mexico city.</h3>
@@ -73,7 +91,7 @@
 				</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li>
 						<a class="page-scroll" href="#page-top">Inicio</a>
@@ -88,7 +106,7 @@
 						<a class="page-scroll" href="#portfolio">Portafolio</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#">Contact</a>
+						<a class="page-scroll" href="#contact">Contacto</a>
 					</li>
 				</ul>
 			</div>
@@ -108,7 +126,11 @@
 		</div>
 	</section>
 
-	<div id="img-about" class="background"></div>
+	<div id="img-about" class="background ">
+		<div class="altura">
+
+		</div>
+	</div>
 
 	<section id="about">
 		<div class="container">
@@ -177,7 +199,11 @@
 		</div>
 	</section>
 
-	<div id="img-services" class="background"></div>
+	<div id="img-services" class="background">
+		<div class="altura">
+
+		</div>
+	</div>
 
 	<section id="services">
 		<div class="container">
@@ -259,6 +285,12 @@
 			</div>
 		</div>
 	</section>
+
+	<div id="img-portfolio" class="background">
+		<div class="altura">
+
+		</div>
+	</div>
 
 
 	<section id="portfolio">
@@ -399,50 +431,64 @@
 								</div>
 							</div>
 						</li>
-
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<div id="img-contacto" class="background">
+		<div class="altura">
+
+		</div>
+	</div>
+
 	<section id="contact">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1 text-center">
+				<div class="col-md-8 col-md-offset-2 text-center">
 					<h2>¿CÓMO PODEMOS AYUDARLE?</h2>
 					<p>Ahora que sabe un poco más sobre nosotros, nos encantaría saber más acerca de su organización, sus retos y lo que es más importante para usted y su negocio.</p>
 				</div>
 			</div>
 			<div id="contact_form" class="row">
-				<div class="col-md-6">
-
-				</div>
 				<div class="col-md-6 form_half">
-					<form role="form" id="feedbackForm" data-toggle="validator" data-disable="false">
+					<div class="datos">
+						<ul>
+							<li><i class="fa fa-envelope-o" aria-hidden="true"></i> info@unusual-projects.com.mx</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i> 000 000 000 000</li>
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i> Pafnuncio Paddilla 53, Satélite,
+								<br> 53100 Naucalpan de Juárez</li>
+						</ul>
+					</div>
+					<form id="feedbackForm" data-toggle="validator" data-disable="false">
 						<div class="form-group">
 							<label class="control-label" for="name">Name *</label>
-
 							<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required/>
-
-							<span class="help-block" style="display: none;">Please enter your name.</span>
+							<span class="help-block " style="display: none;">Please enter your name.</span>
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="email">Reason for Contact *</label>
+
 							<select name="reason" class="form-control" required>
+								<option value="">Eligue una opción</option>
 								<option value="General Inquiry">General Inquiry</option>
 								<option value="Place Order">Place Order</option>
 								<option value="Report Issue">Report Issue</option>
 							</select>
+
 							<span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="email">Email Address *</label>
+
 							<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required/>
+
 							<span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="message">Message *</label>
-							<textarea rows="3" cols="30" class="form-control" id="message" name="message" placeholder="Enter your message" required></textarea>
+							<textarea rows="2" cols="30" class="form-control" id="message" name="message" placeholder="Enter your message" required></textarea>
 							<span class="help-block" style="display: none;">Please enter a message.</span>
 						</div>
 						<div class="form-group">
@@ -450,8 +496,43 @@
 							<span class="help-block" style="display: none;">Please check that you are not a robot.</span>
 						</div>
 						<span class="help-block" style="display: none;">Please enter a the security code.</span>
-						<button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" data-loading-text="Sending..." style="display: block; margin-top: 10px;">Send Feedback</button>
+						<button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg pull-right" data-loading-text="Sending..." style="display: inline-block; margin-top: 10px;">Send Feedback</button>
 					</form>
+				</div>
+				<div class="clearfix visible-xs visible-sm"></div>
+				<div class="col-md-6 form-half-2">
+					<!-- 16:9 aspect ratio -->
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.5850673159733!2d-99.23185963338723!3d19.512503996338914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202d70af0e261%3A0x1bc524259bfdb65a!2sPafnuncio+Padilla+53%2C+Cd.+Sat%C3%A9lite%2C+53100+Naucalpan+de+Ju%C3%A1rez%2C+M%C3%A9x.!5e0!3m2!1ses!2smx!4v1463078450117" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 social">
+						<a class="sbtn-container" href="#" target="_blank">
+							<div class="sbtn sbtn-fb" data-content="Like Us">
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 social">
+						<a class="sbtn-container" href="#" target="_blank">
+							<div class="sbtn sbtn-tw" data-content="Follow Us">
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 social">
+						<a class="sbtn-container" href="#" target="_blank">
+							<div class="sbtn sbtn-insta" data-content="Follow Us">
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 social">
+						<a class="sbtn-container" href="#" target="_blank">
+							<div class="sbtn sbtn-in" data-content="Like Us">
+								<span></span>
+							</div>
+						</a>
+					</div>
 				</div>
 				<!--/span-->
 			</div>
@@ -459,8 +540,17 @@
 	</section>
 
 
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				&nbsp;
+			</div>
+		</div>
+	</footer>
+
+
+
 	<!-- jQuery -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/scrolling-nav.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/jquery.mb.YTPlayer.min.js"></script>
